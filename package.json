@@ -1,0 +1,23 @@
+{
+  "name": "clx-poc-pdf",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "bootstrap": "^5.2.1",
+    "bootstrap-vue": "^2.22.0",
+    "font-awesome": "^4.7.0",
+    "pdfjs-dist": "^2.16.105",
+    "vue": "^2.6.14"
+  },
+  "devDependencies": {
+    "sass": "^1.54.9",
+    "vite": "^3.1.0",
+    "vite-plugin-vue2": "^2.0.2"
+  }
+}
