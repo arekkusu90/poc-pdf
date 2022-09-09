@@ -1,11 +1,11 @@
 <template>
   <div>
     <b-tabs content-class="mt-3">
-      <b-tab title="Nativo">
+      <b-tab title="Nativo" active>
         <pdf-native/>
       </b-tab>
 
-      <b-tab title="PDF.js" active>
+      <b-tab title="PDF.js">
         <pdf-pdf-js/>
       </b-tab>
 
