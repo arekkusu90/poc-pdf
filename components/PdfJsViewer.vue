@@ -82,7 +82,6 @@ export default {
   },
   data() {
     return {
-      g: {},
       LAYOUTS,
       layout: LAYOUTS.ONE,
       isSidebarVisible: true,
@@ -129,16 +128,13 @@ export default {
     },
     async loadDocument() {
       this.document = await pdfJs.getDocument(this.url).promise;
-      window.clx = this.$data;
       this.loadPages();
       this.documentOutline = await this.document.getOutline();
-      // this.g.pageMode = await this.document.getPageMode();
-      // this.g.viewerPreferences = await this.document.getViewerPreferences();
     },
     async loadPages() {
       let pageCount = this.document.numPages;
       // @TODO: limitiamo a 20 per sviluppo
-      pageCount = Math.min(pageCount, 20);
+      // pageCount = Math.min(pageCount, 20);
 
       for (let i = 1; i <= pageCount; i++) {
         this.loadPage(i);
