@@ -1,5 +1,5 @@
 <template>
-  <div class="pdf-pdf-js-outline-item">
+  <div class="pdf-js-viewer-outline-item">
     <b-row align-v="baseline">
       <b-col cols="2" class="pl-0">
         <template v-if="children.length > 0">
@@ -22,7 +22,7 @@
 
     <template v-if="children.length > 0">
       <b-collapse v-model="isChildrenGroupVisible" class="mt-2">
-        <pdf-pdf-js-outline-item
+        <pdf-js-viewer-outline-item
             v-for="child in children"
             :key="child.title"
             :title="child.title"
@@ -37,7 +37,7 @@
 <script>
 
 export default {
-  name: "PdfPdfJsOutlineItem",
+  name: "PdfJsViewerOutlineItem",
   props: {
     title: {type: String, default: ""},
     children: {type: Array, default: () => []}

@@ -1,26 +1,22 @@
 <template>
   <div>
     <b-tabs content-class="mt-3">
-      <b-tab title="Nativo" active>
-        <pdf-native/>
+      <b-tab title="Viewers">
+        <pdf-viewers/>
       </b-tab>
 
-      <b-tab title="PDF.js">
-        <pdf-pdf-js/>
-      </b-tab>
-
-      <b-tab title="jsPDF">
-        <p>J</p>
+      <b-tab title="Edit (pdf-lib)" active>
+        <pdf-edit-pdf-lib/>
       </b-tab>
     </b-tabs>
   </div>
 </template>
 <script>
-import PdfNative from "./components/PdfNative.vue";
-import PdfPdfJs from "./components/PdfPdfJs.vue";
+import PdfViewers from "./components/PdfViewers.vue";
+import PdfEditPdfLib from "./components/PdfEditPdfLib.vue";
 
 export default {
   name: 'App',
-  components: {PdfPdfJs, PdfNative},
+  components: {PdfEditPdfLib, PdfViewers},
 }
 </script>
