@@ -1,11 +1,11 @@
 <template>
   <div>
     <b-tabs content-class="mt-3">
-      <b-tab title="Viewers">
+      <b-tab title="Viewers" active>
         <pdf-viewers/>
       </b-tab>
 
-      <b-tab title="Edit (pdf-lib)" active>
+      <b-tab title="Edit (pdf-lib)">
         <pdf-edit-pdf-lib/>
       </b-tab>
     </b-tabs>
