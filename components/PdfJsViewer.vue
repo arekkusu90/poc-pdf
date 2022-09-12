@@ -133,8 +133,8 @@ export default {
     },
     async loadPages() {
       let pageCount = this.document.numPages;
-      // @TODO: limitiamo a 20 per sviluppo
-      pageCount = Math.min(pageCount, 100);
+      // @TODO: Limit for performance reason
+      pageCount = Math.min(pageCount, 50);
 
       for (let i = 1; i <= pageCount; i++) {
         this.loadPage(i);
